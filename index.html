@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="./src/util/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/util/styler.css">
+  <title>Script Cockpit</title>
+</head>
+
+<body>
+  <br>
+  <div class="container">
+    <br>
+    <div class="jumbotron">
+      <h2>Script Cockpit</h2>
+      <p>Script Management Center</p>
+    </div>
+
+    <div class="col-xs-4">
+      <a href="./src/views/commands.html">
+        <img class="img" id="terminal" src="./src/images/terminal.png" />
+        Commands
+      </a>
+    </div>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script src="./src/linkers/command.js" charset="utf-8"></script>
+</body>
+
+</html>

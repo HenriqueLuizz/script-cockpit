@@ -1,0 +1,35 @@
+{
+  "name": "script-cockpit",
+  "version": "1.0.0",
+  "description": "Script Management Center",
+  "main": "main.js",
+  "build": {
+    "asar": "true",
+    "productName": "Script Cockpit"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/HenriqueLuizz/script-cockpit",
+  "keywords": [
+    "Electron",
+    "commands",
+    "center",
+    "batch",
+    "shellscript"
+  ],
+  "author": "Henrique Luiz",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "4.0.7",
+    "electron-builder": "^22.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.0",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1",
+    "python-shell": "1.0.7"
+  }
+}
