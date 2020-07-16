@@ -22,6 +22,10 @@ def init_file():
                 {"name": "Simple Echo" , "file": f'{path_target}\\script_a.bat'},
                 {"name": "Simple Copy" , "file": f'{path_target}\\script_b.bat'}]
         }
+
+        with open('commands.json', 'w+') as json_read:
+            json.dump(init_data, json_read, indent=3)
+            
     else:
         # Linux
         simple_cmd1 = '#!/bin/bash\necho ScriptCockpit-1.0.0v'

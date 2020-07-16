@@ -4,8 +4,21 @@
   "description": "Script Management Center",
   "main": "main.js",
   "build": {
-    "asar": "true",
-    "productName": "Script Cockpit"
+    "asar": false,
+    "asarUnpack": [
+      "**/*.py"
+    ],
+    "appId": "script.cockpit",
+    "productName": "Script Cockpit",
+    "win": {
+      "icon": "icon.ico",
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "script_cockpit.exe"
+    }
   },
   "scripts": {
     "start": "electron .",

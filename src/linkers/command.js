@@ -1,5 +1,3 @@
-// document.body.onload = getCommands;
-
 function reloadCommands() {
     let table = document.getElementById("listCommand");
     table.innerHTML = "";
@@ -70,8 +68,11 @@ function runCommand(i){
     
     PythonShell.run('command_run.py', options, (err, results) => {
         if (err) throw err;
-        console.log('results: %j', results);
-        alert(results[0])
+        let out = ''
+        for (let i = 0; i < results.length-2; i++) {
+            out =  `${out}${results[i]} \n`;
+        }
+        alert(out)
         return results
     });
 }
